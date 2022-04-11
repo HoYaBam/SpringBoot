@@ -1,0 +1,104 @@
+package com.mcs.product.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.mcs.company.domain.Company;
+import com.mcs.product.domin.Files;
+import com.mcs.product.domin.Product;
+import com.mcs.product.service.ProductService;
+
+@Controller
+public class ProductController {
+
+	@Autowired
+	ProductService productService;
+	
+	// 1.상품등록페이지
+	@GetMapping("/addproductForm")
+	public String addProductView(@AuthenticationPrincipal Company comp, Model model) {
+		model.addAttribute("comp",comp.getCompany_name());
+		return "/product/addProduct";
+	}
+	
+	// 1-1.상품등록
+	@PostMapping("/addproduct")
+	public String addProduct(@AuthenticationPrincipal Company comp, @ModelAttribute("product") Product product, @RequestPart MultipartFile filesinfo) throws Exception {
+		Files file = productService.saveFile(filesinfo, null); //파일저장
+		product.setFiles(file); //저장된파일 번호 가져옴	
+		product.setCompany(comp.getCompany()); //로그인한 기업 아이디 가져옴
+		productService.saveProduct(product); //상품등록
+		return "redirect:/compProductList";
+	}
+	
+	// 2.회원전용 상품리스트 페이지
+	@GetMapping("/productList")
+	public String productlist(Model model) {
+		List<Product> productList = productService.productlist();
+		model.addAttribute("product",productList);
+		return "/product/productList";
+	}
+	
+	// 2-1.회원전용 상품상세 페이지
+	@GetMapping("/productInfo")
+	public String productInfo(@RequestParam("pronum") int pronum, Model model) {
+		Product productInfo = productService.productInfo(pronum);
+		model.addAttribute("product",productInfo);
+		return "/product/productInfo";
+	}
+	
+	// 3.기업전용 상품리스트 페이지 (상품선택시 수정,삭제)
+	@GetMapping("/compProductList")
+	public String updateProductView(@AuthenticationPrincipal Company comp, Model model) {
+		List compProductList = productService.compProductList(comp.getCompany());
+		model.addAttribute("product",compProductList);
+		return "/product/compProductList";
+	}
+	
+	// 3.상품수정페이지
+	@GetMapping("/compProductUpdate")
+	public String compProductUpdateView(@AuthenticationPrincipal Company comp, Model model, @RequestParam("pronum") int pronum) {
+		Product productInfo = productService.productInfo(pronum);
+		model.addAttribute("product",productInfo);		
+		return "/product/compProductUpdate";
+	}
+	
+	// 3.상품수정 and 파일수정
+	@PostMapping("/updateProduct")
+	public String updateProduct(@ModelAttribute("product") Product product,@RequestParam("filenum") Integer filenum, @RequestPart MultipartFile filesinfo) throws Exception {	
+		Files file = productService.saveFile(filesinfo, filenum); //파일저장(수정 filenum값)	
+		product.setFiles(file); //저장된파일 가져옴	
+		productService.saveProduct(product); //상품등록
+		return "redirect:/compProductList";
+	}
+	
+	// 3-1.상품삭제
+	@Transactional
+	@GetMapping("/deleteProduct")
+	public String deleteProduct(@RequestParam("pronum") Integer pronum) {
+		productService.deleteProduct(pronum);
+		return "redirect:/compProductList";
+	}
+	
+	// 4.기업전용 원료페이지
+	@GetMapping("/compProductIngredients")
+	public String compProductIngredients(@AuthenticationPrincipal Company comp, Model model) {
+		List compProductList = productService.compProductList(comp.getCompany());
+		model.addAttribute("product",compProductList);
+		return "/product/compProductIngredients";
+	}	
+	
+}

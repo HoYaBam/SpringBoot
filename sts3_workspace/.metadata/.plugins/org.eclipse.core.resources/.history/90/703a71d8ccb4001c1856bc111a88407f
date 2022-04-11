@@ -1,0 +1,16 @@
+package com.mcs.total.domain;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+
+import com.mcs.product.domin.Files;
+import com.mcs.product.domin.Product;
+
+import lombok.Data;
+
+@Entity
+@Data
+public class skintest {
+
+}

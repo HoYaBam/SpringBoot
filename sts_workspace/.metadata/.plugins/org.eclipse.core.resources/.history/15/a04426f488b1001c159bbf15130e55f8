@@ -1,0 +1,82 @@
+package com.rubypaper.persistence;
+
+import java.util.Optional;
+
+import org.springframework.data.repository.CrudRepository;
+import com.rubypaper.domain.Board;
+
+public interface BoardRepository extends CrudRepository<Board, Long>  {
+
+	@Override
+	default <S extends Board> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	default <S extends Board> Iterable<S> saveAll(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	default Optional<Board> findById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	default boolean existsById(Long id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	default Iterable<Board> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	default Iterable<Board> findAllById(Iterable<Long> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	default long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	default void deleteById(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	default void delete(Board entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	default void deleteAllById(Iterable<? extends Long> ids) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	default void deleteAll(Iterable<? extends Board> entities) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	default void deleteAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

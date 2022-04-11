@@ -1,0 +1,17 @@
+package com.mcs.total.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.mcs.product.domin.Product;
+
+@Controller
+public class TotalController {
+	@GetMapping("/totalAccount")
+	public String productlist(Model model) {
+		return "/total/measurement";
+	}
+}

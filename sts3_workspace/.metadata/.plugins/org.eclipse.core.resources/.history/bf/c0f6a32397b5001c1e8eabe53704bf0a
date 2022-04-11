@@ -1,0 +1,23 @@
+package com.mcs.total.domain;
+
+import lombok.Data;
+
+@Data
+public class BaumannSkin {
+	private Integer DRPT;
+	private Integer DRNT;
+	private Integer DSPT;
+	private Integer DSNT;
+	private Integer DRPW;
+	private Integer DRNW;
+	private Integer DSPW;
+	private Integer DSNW;
+	private Integer ORPT;
+	private Integer ORNT;
+	private Integer OSPT;
+	private Integer OSNT;
+	private Integer ORPW;
+	private Integer ORNW;
+	private Integer OSPW;
+	private Integer OSNW;
+}

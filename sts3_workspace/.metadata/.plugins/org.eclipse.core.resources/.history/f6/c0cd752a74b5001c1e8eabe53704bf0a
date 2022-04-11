@@ -1,0 +1,34 @@
+package com.mcs.total.domain;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import com.mcs.member.domain.Member;
+
+import lombok.Data;
+
+@Entity
+@Data
+@EntityListeners(AuditingEntityListener.class)
+public class skintest {
+	
+	@Id
+	private String test_num;
+	@ManyToOne
+	@JoinColumn(name = "userid")
+	private Member member;
+	private Integer balance;
+	private Integer sensitivity;
+	private Integer melanin;
+	private Integer elasticity;
+	private String baumann;
+	private Date test_date;
+
+}

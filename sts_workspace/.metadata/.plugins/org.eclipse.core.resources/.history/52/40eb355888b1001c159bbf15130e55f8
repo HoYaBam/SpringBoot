@@ -1,0 +1,12 @@
+package com.rubypaper.persistence;
+
+import com.rubypaper.domain.Board;
+
+public class BoardRepository {
+
+	public void save(Board board) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

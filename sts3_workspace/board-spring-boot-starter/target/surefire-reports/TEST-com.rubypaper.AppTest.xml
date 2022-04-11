@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.rubypaper.AppTest" time="0.056" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="MS949"/>
+    <property name="java.class.path" value="C:\myJSP\sts_workspace\board-spring-boot-starter\target\test-classes;C:\myJSP\sts_workspace\board-spring-boot-starter\target\classes;C:\Users\hoya9\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\hoya9\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\hoya9\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hoya9\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.6.5\spring-boot-autoconfigure-2.6.5.jar;C:\Users\hoya9\.m2\repository\org\springframework\boot\spring-boot\2.6.5\spring-boot-2.6.5.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-core\5.3.17\spring-core-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-jcl\5.3.17\spring-jcl-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-context\5.3.17\spring-context-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-aop\5.3.17\spring-aop-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-beans\5.3.17\spring-beans-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-expression\5.3.17\spring-expression-5.3.17.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
+    <property name="sun.java.command" value="C:\Users\hoya9\AppData\Local\Temp\surefire12298699668183983092\surefirebooter10877727681287503847.jar C:\Users\hoya9\AppData\Local\Temp\surefire12298699668183983092 2022-03-29T16-36-51_023-jvmRun1 surefire15591743104680600354tmp surefire_05599051055295710691tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\myJSP\sts_workspace\board-spring-boot-starter\target\test-classes;C:\myJSP\sts_workspace\board-spring-boot-starter\target\classes;C:\Users\hoya9\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\hoya9\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;C:\Users\hoya9\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hoya9\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.6.5\spring-boot-autoconfigure-2.6.5.jar;C:\Users\hoya9\.m2\repository\org\springframework\boot\spring-boot\2.6.5\spring-boot-2.6.5.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-core\5.3.17\spring-core-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-jcl\5.3.17\spring-jcl-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-context\5.3.17\spring-context-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-aop\5.3.17\spring-aop-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-beans\5.3.17\spring-beans-5.3.17.jar;C:\Users\hoya9\.m2\repository\org\springframework\spring-expression\5.3.17\spring-expression-5.3.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hoya9"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.13"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\myJSP\sts_workspace\board-spring-boot-starter"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\hoya9\AppData\Local\Temp\surefire12298699668183983092\surefirebooter10877727681287503847.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="user.name" value="hoya9"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="MS949"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\hoya9\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hoya9\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="user.dir" value="C:\myJSP\sts_workspace\board-spring-boot-starter"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-11.0.13/bin/server;C:/Program Files/Java/jdk-11.0.13/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Java\jdk-11.0.13\bin;C:\spring\apache-maven-3.8.4-bin\apache-maven-3.8.4\bin;C:\spring\gradle-7.4.1-bin\gradle-7.4.1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\hoya9\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\hoya9\AppData\Local\Programs\Python\Python38\;C:\Users\hoya9\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Brackets\;C:\Users\hoya9\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-11.0.13\bin;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.2\bin;;C:\spring\sts-4.14.0.RELEASE;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="com.rubypaper.AppTest" time="0.003"/>
+</testsuite>

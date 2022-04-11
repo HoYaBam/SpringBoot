@@ -1,0 +1,27 @@
+package com.rubypaper.service;
+
+import java.util.List;
+
+import com.rubypaper.domain.BoardVO;
+
+public class BoardServiceImpl implements BoardService{
+
+	@Override
+	public String hello(String name) {
+		return "Hello : " + name;
+	}
+
+	@Override
+	public BoardVO getBoard() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BoardVO> getBoardList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

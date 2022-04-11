@@ -1,0 +1,18 @@
+#Server
+server.port=8090
+server.reactive.session.timeout=360000
+
+#Spring MVC
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+
+#Database config
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:XE
+spring.datasource.dbcp2.username=scott
+spring.datasource.dbcp2.password=12345
+spring.datasource.dbcp2.driver-class-name=oracle.jdbc.driver.OracleDriver
+
+#mybatis config
+mybatis.confing=classpath:mybatis-config.xml
+
+mybatis.type-aliases-package=com.myboot03.member.vo

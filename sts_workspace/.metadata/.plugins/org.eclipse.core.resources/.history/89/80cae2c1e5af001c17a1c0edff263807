@@ -1,0 +1,5 @@
+# Server
+server.port=8090
+
+# 빈 overriding 설정
+spring.main.allow-bean-definition-overriding=true

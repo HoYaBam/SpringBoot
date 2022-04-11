@@ -1,0 +1,7 @@
+# ViewResolver Setting
+spring.mvc.view.prefix=/WEB-INF/board/
+spring.mvc.view.suffix=.jsp
+
+
+# Server
+server.port=8090

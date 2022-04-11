@@ -1,0 +1,34 @@
+package com.rubypaper.service;
+
+import java.util.Date;
+import java.util.List;
+
+import com.rubypaper.domain.BoardVO;
+
+public class BoardServiceImpl implements BoardService{
+
+	@Override
+	public String hello(String name) {
+		return "Hello : " + name;
+	}
+
+	@Override
+	public BoardVO getBoard() {
+		BoardVO board = new BoardVO();
+		board.setSeq(1);
+		board.setTitle("테스트 제목...");
+		board.setWriter("테스터");
+		board.setContent("테스트 내용입니다....(´▽`ʃ♡ƪ)(´▽`ʃ♡ƪ)");
+		board.setCreateDate(new Date());
+		board.setCnt(0);
+		return board;
+	}
+
+	@Override
+	public List<BoardVO> getBoardList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

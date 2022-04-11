@@ -1,0 +1,5 @@
+package com.rubypaper.jdbc.util;
+
+public class JDBCConnectionManager {
+
+}

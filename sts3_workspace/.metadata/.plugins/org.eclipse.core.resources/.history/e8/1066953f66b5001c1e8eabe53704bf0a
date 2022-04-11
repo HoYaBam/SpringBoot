@@ -1,0 +1,11 @@
+package com.rubypaper.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ExceptionController {
+      @RequestMapping("/boardError")
+      public String boardError() {
+            throw new BoardNotFoundException("검색된 게시글이 없습니다.");
+}

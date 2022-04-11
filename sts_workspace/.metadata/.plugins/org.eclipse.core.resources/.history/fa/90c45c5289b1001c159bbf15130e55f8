@@ -1,0 +1,17 @@
+package com.rubypaper.persistence;
+
+import java.util.Date;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.rubypaper.domain.Board;
+
+public interface BoardRepository extends CrudRepository<Board, Long>  {
+
+	@Override
+	default <S extends Board> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

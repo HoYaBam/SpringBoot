@@ -1,0 +1,8 @@
+package com.mcs.total.domain;
+
+import javax.persistence.Entity;
+
+//@Entity
+public class Skintest {
+
+}

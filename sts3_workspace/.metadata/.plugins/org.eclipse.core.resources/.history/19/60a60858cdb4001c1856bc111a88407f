@@ -1,0 +1,21 @@
+package com.mcs.total.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mcs.order.domain.OrderDetail;
+
+public class skinRepository extends JpaRepository<skintest, Integer> {
+
+
+//	List<OrderDetail> findByOrder(Order order);
+//
+//	@Query(value = "select *"
+//			+ "from order_detail d"
+//			+ "        inner join order_info o"
+//			+ "            on d.ordernum = o.ordernum"
+//			+ "        inner join product p"
+//			+ "            on p.pronum = d.pronum"
+//			+ "    where o.userid = :userid;", nativeQuery=true)
+//	List<OrderDetail> oCheck(@Param("userid") String userid);{
+
+}

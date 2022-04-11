@@ -1,0 +1,93 @@
+package com.mcs.total.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mcs.total.domain.Skintest;
+import com.mcs.total.repository.SkinRepository;
+
+@Service
+public class SkinService {
+	@Autowired
+	private SkinRepository skinRepo;
+	
+	public List<Skintest> skintest() {
+		int DRPT = 0;
+		int DRNT = 0;
+		int DSPT = 0;
+		int DSNT = 0;
+		int DRPW = 0;
+		int DRNW = 0;
+		int DSPW = 0;
+		int DSNW = 0;
+		int ORPT = 0;
+		int ORNT = 0;
+		int OSPT = 0;
+		int OSNT = 0;
+		int ORPW = 0;
+		int ORNW = 0;
+		int OSPW = 0;
+		int OSNW = 0;
+		List<Skintest> skintest = skinRepo.findAll();
+		for (int i = 0; i < skintest.size(); i++) {
+			Skintest skin = skintest.get(i);
+			if (skin.getBaumann().equals("DRPT")){
+				DRPT += 1;
+			}
+			else if (skin.getBaumann().equals("DRNT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("DSPT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("DSNT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("DRPW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("DRNW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("DSPW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("DSNW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("ORPT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("ORNT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("OSPT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("OSNT")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("ORPW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("ORNW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("OSPW")){
+				DRNT += 1;
+			}
+			else if (skin.getBaumann().equals("OSNW")){
+				DRNT += 1;
+			}
+		}
+		List skin = new ArrayList();
+		skin.add(DRPT, DRNT, DSPT);
+		skin.add(DRPT, DRNT, DSPT, DSNT, DRPW, DRNW, DSPW, DSNW, ORPT, ORNT, OSPT, OSNT, ORPW, ORNW, OSPW, OSNW);
+		
+		return skinRepo.findAll();
+	}
+	
+}

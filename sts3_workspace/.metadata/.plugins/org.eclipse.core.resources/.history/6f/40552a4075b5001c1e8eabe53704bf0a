@@ -1,0 +1,23 @@
+package com.mcs.total.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.mcs.total.domain.skintest;
+
+@Controller
+public class TotalController {
+	@Autowired
+	private skintest sktest;
+	
+	@GetMapping("/totalAccount")
+	public String productlist(Model model) {
+		List<skintest> totalskin = sktest. 
+//		model.addAttribute("salePrice",salePrice);
+		return "/total/measurement";
+	}
+}

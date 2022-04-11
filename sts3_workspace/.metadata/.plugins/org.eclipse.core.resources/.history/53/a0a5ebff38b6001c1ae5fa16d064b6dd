@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>파라미터 전달 예제</h1>
+        <a th:href="@{/thymeleaf/ex01}">예제1 페이지 이동</a>
+        <span th:text="${param1}"></span>
+        <span th:text="${param2}"></span>
+</body>
+</html>

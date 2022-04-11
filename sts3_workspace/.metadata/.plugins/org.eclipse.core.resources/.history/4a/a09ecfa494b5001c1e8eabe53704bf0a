@@ -1,0 +1,6 @@
+package com.mcs.total.domain;
+
+@Data
+public class BaumannSkin {
+	private Integer cnt;
+}

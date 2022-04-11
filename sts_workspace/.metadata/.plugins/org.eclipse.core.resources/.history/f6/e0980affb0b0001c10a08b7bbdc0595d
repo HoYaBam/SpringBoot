@@ -1,0 +1,13 @@
+server.port=0
+
+spring.http.encoding.charset=UTF-8
+spring.http.encoding.enabled=true
+spring.http.encoding.force=true
+
+author.name=Kang DongHo
+author.age=28
+author.gender=female
+
+# spring.main.web-application-type=none
+
+#logging.level.com.rubypaper=trace
